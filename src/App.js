@@ -1,6 +1,7 @@
 
 import './App.css';
-import Pokedex from './Pokedex.js'
+// import Pokedex from './Pokedex.js'
+import Pokegame from './Pokegame.js'
 
 const POKEMONS = [
   {id: 4,   name: 'Charmander', type: 'fire',     base_experience: 62},
@@ -15,16 +16,19 @@ const POKEMONS = [
 
 /**
  * Creates application using array with Objects with Pokemon information.
- * 
+ *
  */
 
 function App() {
+  console.debug('App');
   return (
     <div className="App">
-      <h1 className="App-title">Pokedex</h1>
-      <Pokedex pokemons={POKEMONS} />
+      <h1 className="App-title">Pokegame</h1>
+      <Pokegame pokemons={POKEMONS}/>
     </div>
   );
 }
 
 export default App;
+
+{/* <Pokedex pokemons={POKEMONS} /> */}
