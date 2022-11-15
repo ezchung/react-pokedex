@@ -32,6 +32,10 @@ function Pokegame({pokemons}) {
 
   return (
     <div className='Pokegame'>
+      {player1PokemonExp === player2PokemonExp 
+        ? <h3 className="Pokegame-tie">This is a tie!</h3>
+        : null
+      }
       {tied}
       <div className='Pokegame-player1'>
         <h3 className="Pokegame-player1-header">Player 1</h3>
@@ -46,3 +50,8 @@ function Pokegame({pokemons}) {
 }
 
 export default Pokegame;
+
+//TODO: Names on 8 & 12. player2 card
+//Things: Docstring, helper functions (7-15) (shuffles)
+  //if condition, pass in to line 38, isWinner = {player1Exp > player2Exp} 
+//With null, nothing here. can take expression in line 35-37 to line 30.
