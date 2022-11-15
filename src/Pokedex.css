@@ -1,0 +1,10 @@
+.Pokedex-winner-message{
+    position: relative;
+    background-color: yellow;
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+
+.Pokedex-winner-message:hover{
+    font-size: 50px;
+}

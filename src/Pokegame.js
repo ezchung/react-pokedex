@@ -1,4 +1,5 @@
 import Pokedex from './Pokedex.js';
+import './Pokegame.css';
 const _ = require('lodash');
 
 function Pokegame({pokemons}) {

@@ -1,5 +1,5 @@
 import Pokecard from './Pokecard.js';
-
+import './Pokedex.css';
 
 /**
  * Used to create a list of given pokemon. Calls Pokecard component to render
