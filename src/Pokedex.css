@@ -1,10 +1,23 @@
 .Pokedex-winner-message{
     position: relative;
-    background-color: yellow;
+    /* background-color: yellow;
     transition-property: font-size;
-    transition-duration: 1s;
+    transition-duration: 1s; */
+    animation: fade-in ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    animation-delay: 5s;
 }
 
-.Pokedex-winner-message:hover{
+/* .Pokedex-winner-message:hover{
     font-size: 50px;
+} */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

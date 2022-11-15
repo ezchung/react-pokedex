@@ -15,6 +15,9 @@
     background-color:rgb(196, 196, 196);
     border-radius: 25px;
     padding: 3px;
+    animation: fade-in ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .Pokecard-inner:hover{
@@ -29,4 +32,14 @@
 .Pokecard-exp{
     font-size: small;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
